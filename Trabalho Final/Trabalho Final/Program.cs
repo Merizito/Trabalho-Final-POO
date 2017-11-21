@@ -13,7 +13,7 @@ namespace Trabalho_Final
         /// </summary>
         [STAThread]
         static void Main()
-        {
+        {                                                   //teste
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ENERGIA_BOTAO = new System.Windows.Forms.Button();
+            this.AGUA_BOTAO = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.Relatorios_comboBox = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -56,25 +56,25 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Qual é o tipo de relatório desejado?";
             // 
-            // button1
+            // ENERGIA_BOTAO
             // 
-            this.button1.Location = new System.Drawing.Point(171, 59);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "ENERGIA";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ENERGIA_BOTAO.Location = new System.Drawing.Point(171, 59);
+            this.ENERGIA_BOTAO.Name = "ENERGIA_BOTAO";
+            this.ENERGIA_BOTAO.Size = new System.Drawing.Size(75, 23);
+            this.ENERGIA_BOTAO.TabIndex = 2;
+            this.ENERGIA_BOTAO.Text = "ENERGIA";
+            this.ENERGIA_BOTAO.UseVisualStyleBackColor = true;
+            this.ENERGIA_BOTAO.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // AGUA_BOTAO
             // 
-            this.button2.Location = new System.Drawing.Point(15, 59);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "AGUA";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.AGUA_BOTAO.Location = new System.Drawing.Point(15, 59);
+            this.AGUA_BOTAO.Name = "AGUA_BOTAO";
+            this.AGUA_BOTAO.Size = new System.Drawing.Size(75, 23);
+            this.AGUA_BOTAO.TabIndex = 3;
+            this.AGUA_BOTAO.Text = "AGUA";
+            this.AGUA_BOTAO.UseVisualStyleBackColor = true;
+            this.AGUA_BOTAO.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -92,6 +92,7 @@
             this.Relatorios_comboBox.Name = "Relatorios_comboBox";
             this.Relatorios_comboBox.Size = new System.Drawing.Size(123, 21);
             this.Relatorios_comboBox.TabIndex = 4;
+            this.Relatorios_comboBox.SelectedIndexChanged += new System.EventHandler(this.Relatorios_comboBox_SelectedIndexChanged);
             // 
             // button3
             // 
@@ -130,8 +131,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Relatorios_comboBox);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AGUA_BOTAO);
+            this.Controls.Add(this.ENERGIA_BOTAO);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Escolha_Relatorio_Forms";
@@ -146,8 +147,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ENERGIA_BOTAO;
+        private System.Windows.Forms.Button AGUA_BOTAO;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox Relatorios_comboBox;
         private System.Windows.Forms.Button button3;

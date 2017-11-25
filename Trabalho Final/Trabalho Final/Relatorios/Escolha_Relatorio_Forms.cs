@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 using Trabalho_Final.Conta;
 
 
@@ -16,6 +17,11 @@ namespace Trabalho_Final
     public partial class Escolha_Relatorio_Forms : Form
     {
         IConta contaEscolhida;
+        StreamReader arquivoCombobox;
+        string escolha;
+
+
+
         public Escolha_Relatorio_Forms()
         {
             InitializeComponent();
@@ -28,14 +34,65 @@ namespace Trabalho_Final
 
         private void button2_Click(object sender, EventArgs e)
         {
+            int i = 0;
+            escolha = "agua";
+            ENERGIA_BOTAO.Enabled = false;
+            AGUA_BOTAO.Enabled = false;
             contaEscolhida = new ContaAgua();
-            //terminar botao
+            arquivoCombobox = Program.abrirArquivo(escolha.ToLower());
+            string texto = arquivoCombobox.ReadToEnd();
+            string[] vetor = texto.Split('\n', '-');
+            for (i = 0; i < vetor.Length; i++)
+            {
+                try
+                {
+                    Relatorios_comboBox.Items.Add(vetor[i]);
+                    i++;
+                }
+                catch (StackOverflowException)
+                {
+                    i = vetor.Length;
+                }
+            }
+            Program.fecharArquivo(arquivoCombobox);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            escolha = "energia";
+            int i = 0;
+
+            ENERGIA_BOTAO.Enabled = false;
+            AGUA_BOTAO.Enabled = false;
+
             contaEscolhida = new ContaEnergia();
-            //terminar botao
+            arquivoCombobox = Program.abrirArquivo(escolha.ToLower());
+
+            string texto = arquivoCombobox.ReadToEnd();
+            string[] vetor = texto.Split('\n', '-');
+
+            for (i = 0; i < vetor.Length; i++)
+            {
+                try
+                {
+                    Relatorios_comboBox.Items.Add(vetor[i]);
+                    i++;
+                }
+                catch (StackOverflowException)
+                {
+                    i = vetor.Length;
+                }
+            }
+
+
+            Program.fecharArquivo(arquivoCombobox);
+
+
+        }
+
+        private void Relatorios_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

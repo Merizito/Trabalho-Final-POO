@@ -16,7 +16,7 @@ namespace Trabalho_Final
 {
     public partial class Escolha_Relatorio_Forms : Form
     {
-        IConta contaEscolhida;
+        Trabalho_Final.Conta.IConta contaEscolhida;
         StreamReader arquivoCombobox;
         string escolha;
 
@@ -93,6 +93,21 @@ namespace Trabalho_Final
 
         private void Relatorios_comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void Proximo_botao_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Relatorios_comboBox.Text == "" || Relatorios_comboBox.Text == null)
+                    throw new NullReferenceException();
+                else
+                    contaEscolhida.setRelatorio(Relatorios_comboBox.Text);
+            }
+            catch (NullReferenceException) {
+
+            }
 
         }
     }

@@ -34,9 +34,9 @@
             this.AGUA_BOTAO = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.Relatorios_comboBox = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.Sair_botao = new System.Windows.Forms.Button();
+            this.Proximo_botao = new System.Windows.Forms.Button();
+            this.Voltar_botao = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -94,41 +94,42 @@
             this.Relatorios_comboBox.TabIndex = 4;
             this.Relatorios_comboBox.SelectedIndexChanged += new System.EventHandler(this.Relatorios_comboBox_SelectedIndexChanged);
             // 
-            // button3
+            // Sair_botao
             // 
-            this.button3.Location = new System.Drawing.Point(12, 208);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "SAIR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Sair_botao.Location = new System.Drawing.Point(12, 208);
+            this.Sair_botao.Name = "Sair_botao";
+            this.Sair_botao.Size = new System.Drawing.Size(75, 23);
+            this.Sair_botao.TabIndex = 6;
+            this.Sair_botao.Text = "SAIR";
+            this.Sair_botao.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // Proximo_botao
             // 
-            this.button4.Location = new System.Drawing.Point(188, 208);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "PROXIMO";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Proximo_botao.Location = new System.Drawing.Point(188, 208);
+            this.Proximo_botao.Name = "Proximo_botao";
+            this.Proximo_botao.Size = new System.Drawing.Size(75, 23);
+            this.Proximo_botao.TabIndex = 7;
+            this.Proximo_botao.Text = "PROXIMO";
+            this.Proximo_botao.UseVisualStyleBackColor = true;
+            this.Proximo_botao.Click += new System.EventHandler(this.Proximo_botao_Click);
             // 
-            // button5
+            // Voltar_botao
             // 
-            this.button5.Location = new System.Drawing.Point(107, 208);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "VOLTAR";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Voltar_botao.Location = new System.Drawing.Point(107, 208);
+            this.Voltar_botao.Name = "Voltar_botao";
+            this.Voltar_botao.Size = new System.Drawing.Size(75, 23);
+            this.Voltar_botao.TabIndex = 8;
+            this.Voltar_botao.Text = "VOLTAR";
+            this.Voltar_botao.UseVisualStyleBackColor = true;
             // 
             // Escolha_Relatorio_Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 243);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Voltar_botao);
+            this.Controls.Add(this.Proximo_botao);
+            this.Controls.Add(this.Sair_botao);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Relatorios_comboBox);
             this.Controls.Add(this.AGUA_BOTAO);
@@ -151,8 +152,8 @@
         private System.Windows.Forms.Button AGUA_BOTAO;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox Relatorios_comboBox;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Sair_botao;
+        private System.Windows.Forms.Button Proximo_botao;
+        private System.Windows.Forms.Button Voltar_botao;
     }
 }

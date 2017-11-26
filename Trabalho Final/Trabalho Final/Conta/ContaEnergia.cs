@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Trabalho_Final.Conta
 {
-    class ContaEnergia : IConta
+    class ContaEnergia : Conta, IConta
     {
+        public ContaEnergia() {
+            setTipo("energia");
+        }
+
     }
 }

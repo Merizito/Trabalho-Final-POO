@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Trabalho_Final.Conta
 {
-    class ContaAgua : IConta
+    class ContaAgua : Conta,  IConta
     {
+        public ContaAgua() {
+            setTipo("agua");
+        }
+
     }
 }

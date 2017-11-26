@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conta\Conta.cs" />
     <Compile Include="Conta\ContaAgua.cs" />
     <Compile Include="Conta\ContaEnergia.cs" />
     <Compile Include="Relatorios\Exibir_Relatorio_Forms.cs">
@@ -69,6 +70,7 @@
     <Compile Include="Relatorios\Escolha_Relatorio_Forms.Designer.cs">
       <DependentUpon>Escolha_Relatorio_Forms.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usuarios\Usuario.cs" />
     <EmbeddedResource Include="Relatorios\Exibir_Relatorio_Forms.resx">
       <DependentUpon>Exibir_Relatorio_Forms.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,8 +103,6 @@
   <ItemGroup>
     <None Include="Conta\App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Usuarios\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

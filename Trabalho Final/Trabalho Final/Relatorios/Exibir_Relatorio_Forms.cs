@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trabalho_Final.Conta;
 
 namespace Trabalho_Final
 {
@@ -20,6 +21,9 @@ namespace Trabalho_Final
         private void Exibir_Relatorio_Forms_Load(object sender, EventArgs e)
         {
 
+        }
+        public Exibir_Relatorio_Forms(IConta conta) {
+            InitializeComponent();
         }
     }
 }

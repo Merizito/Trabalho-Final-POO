@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabalho_Final.Conta
 {
-    interface IConta
+   public interface IConta
     {
     }
 }

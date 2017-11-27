@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.IO;
+using Trabalho_Final.Relatorios;
+using Trabalho_Final.Relatorios;
 using System.Windows.Forms;
 
 namespace Trabalho_Final
 {
     static class Program
     {
+        static public Contas.Conta contaRelatorio;
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>

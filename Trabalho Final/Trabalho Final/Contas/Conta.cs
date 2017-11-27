@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Trabalho_Final.Conta
+namespace Trabalho_Final.Contas
 {
-   abstract class Conta
+   
+    public abstract class Conta
     {
         Usuario usuario;
         private string tipo;
@@ -22,9 +23,23 @@ namespace Trabalho_Final.Conta
         {
             return this.relatorio;
         }
-        public void setRelatorio(string relatorio)
+        public void setRelatorio(string relatorio)//bora tentar
         {
             this.relatorio = relatorio;
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

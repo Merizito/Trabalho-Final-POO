@@ -46,16 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conta\Conta.cs" />
-    <Compile Include="Conta\ContaAgua.cs" />
-    <Compile Include="Conta\ContaEnergia.cs" />
-    <Compile Include="Relatorios\Exibir_Relatorio_Forms.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Relatorios\Exibir_Relatorio_Forms.Designer.cs">
-      <DependentUpon>Exibir_Relatorio_Forms.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Conta\IConta.cs" />
+    <Compile Include="Contas\Conta.cs" />
+    <Compile Include="Contas\ContaAgua.cs" />
+    <Compile Include="Contas\ContaEnergia.cs" />
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,10 +63,13 @@
     <Compile Include="Relatorios\Escolha_Relatorio_Forms.Designer.cs">
       <DependentUpon>Escolha_Relatorio_Forms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios\Usuario.cs" />
-    <EmbeddedResource Include="Relatorios\Exibir_Relatorio_Forms.resx">
+    <Compile Include="Relatorios\Exibir_Relatorio_Forms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Exibir_Relatorio_Forms.Designer.cs">
       <DependentUpon>Exibir_Relatorio_Forms.cs</DependentUpon>
-    </EmbeddedResource>
+    </Compile>
+    <Compile Include="Usuarios\Usuario.cs" />
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +86,9 @@
     <EmbeddedResource Include="Relatorios\Escolha_Relatorio_Forms.resx">
       <DependentUpon>Escolha_Relatorio_Forms.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Exibir_Relatorio_Forms.resx">
+      <DependentUpon>Exibir_Relatorio_Forms.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,7 +100,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Conta\App.config" />
+    <None Include="Contas\App.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

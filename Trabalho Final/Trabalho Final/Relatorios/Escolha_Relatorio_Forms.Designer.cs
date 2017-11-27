@@ -1,4 +1,4 @@
-﻿namespace Trabalho_Final
+﻿namespace Trabalho_Final.Relatorios
 {
     partial class Escolha_Relatorio_Forms
     {
@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ENERGIA_BOTAO = new System.Windows.Forms.Button();
-            this.AGUA_BOTAO = new System.Windows.Forms.Button();
+            this.AGUA = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.Relatorios_comboBox = new System.Windows.Forms.ComboBox();
             this.Sair_botao = new System.Windows.Forms.Button();
@@ -66,15 +66,15 @@
             this.ENERGIA_BOTAO.UseVisualStyleBackColor = true;
             this.ENERGIA_BOTAO.Click += new System.EventHandler(this.button1_Click);
             // 
-            // AGUA_BOTAO
+            // AGUA
             // 
-            this.AGUA_BOTAO.Location = new System.Drawing.Point(15, 59);
-            this.AGUA_BOTAO.Name = "AGUA_BOTAO";
-            this.AGUA_BOTAO.Size = new System.Drawing.Size(75, 23);
-            this.AGUA_BOTAO.TabIndex = 3;
-            this.AGUA_BOTAO.Text = "AGUA";
-            this.AGUA_BOTAO.UseVisualStyleBackColor = true;
-            this.AGUA_BOTAO.Click += new System.EventHandler(this.button2_Click);
+            this.AGUA.Location = new System.Drawing.Point(15, 59);
+            this.AGUA.Name = "AGUA";
+            this.AGUA.Size = new System.Drawing.Size(75, 23);
+            this.AGUA.TabIndex = 3;
+            this.AGUA.Text = "AGUA";
+            this.AGUA.UseVisualStyleBackColor = true;
+            this.AGUA.Click += new System.EventHandler(this.AGUA_Click);
             // 
             // label3
             // 
@@ -102,6 +102,7 @@
             this.Sair_botao.TabIndex = 6;
             this.Sair_botao.Text = "SAIR";
             this.Sair_botao.UseVisualStyleBackColor = true;
+            this.Sair_botao.Click += new System.EventHandler(this.Sair_botao_Click);
             // 
             // Proximo_botao
             // 
@@ -132,7 +133,7 @@
             this.Controls.Add(this.Sair_botao);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Relatorios_comboBox);
-            this.Controls.Add(this.AGUA_BOTAO);
+            this.Controls.Add(this.AGUA);
             this.Controls.Add(this.ENERGIA_BOTAO);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -149,7 +150,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button ENERGIA_BOTAO;
-        private System.Windows.Forms.Button AGUA_BOTAO;
+        private System.Windows.Forms.Button AGUA;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox Relatorios_comboBox;
         private System.Windows.Forms.Button Sair_botao;

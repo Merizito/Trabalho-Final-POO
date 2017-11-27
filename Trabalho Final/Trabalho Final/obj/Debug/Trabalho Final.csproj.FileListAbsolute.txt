@@ -2,11 +2,11 @@ C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\bin\Debug\Trab
 C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\bin\Debug\Trabalho Final.exe
 C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\bin\Debug\Trabalho Final.pdb
 C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.csprojResolveAssemblyReference.cache
-C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Exibir_Relatorio_Forms.resources
 C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.MenuPrincipal.resources
 C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Properties.Resources.resources
-C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Escolha_Relatorio_Forms.resources
 C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.csproj.GenerateResource.Cache
 C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.csproj.CoreCompileInputs.cache
 C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.exe
 C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.pdb
+C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Relatorios.Escolha_Relatorio_Forms.resources
+C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Relatorios.Exibir_Relatorio_Forms.resources

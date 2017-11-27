@@ -24,7 +24,7 @@ namespace Trabalho_Final
             
         }
        public static StreamReader abrirArquivo(string nome) {
-            FileStream arq = new FileStream(nome +".txt", FileMode.Open);
+            FileStream arq = new FileStream(nome +".txt", FileMode.Open); 
             StreamReader abrir = new StreamReader(arq);
             return abrir;
         }

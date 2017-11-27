@@ -8,5 +8,6 @@ namespace Trabalho_Final.Usuarios
 {
     class Usuario
     {
+
     }
 }

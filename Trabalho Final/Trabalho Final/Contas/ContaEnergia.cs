@@ -9,7 +9,7 @@ namespace Trabalho_Final.Contas
     class ContaEnergia : Conta
     {
         public ContaEnergia() {
-            setTipo("energia");
+            setTipo("energia"); 
         }
 
     }

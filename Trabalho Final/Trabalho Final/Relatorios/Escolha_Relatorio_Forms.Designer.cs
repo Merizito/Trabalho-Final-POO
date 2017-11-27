@@ -58,7 +58,7 @@
             // 
             // ENERGIA_BOTAO
             // 
-            this.ENERGIA_BOTAO.Location = new System.Drawing.Point(171, 59);
+            this.ENERGIA_BOTAO.Location = new System.Drawing.Point(177, 59);
             this.ENERGIA_BOTAO.Name = "ENERGIA_BOTAO";
             this.ENERGIA_BOTAO.Size = new System.Drawing.Size(75, 23);
             this.ENERGIA_BOTAO.TabIndex = 2;

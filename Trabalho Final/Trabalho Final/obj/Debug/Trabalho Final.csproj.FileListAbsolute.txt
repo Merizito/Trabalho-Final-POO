@@ -10,3 +10,15 @@ C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trab
 C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.pdb
 C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Relatorios.Escolha_Relatorio_Forms.resources
 C:\Users\Rafael\Desktop\TrabalhoPOO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Relatorios.Exibir_Relatorio_Forms.resources
+C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\bin\Debug\Trabalho Final.exe.config
+C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.exe
+C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.pdb
+C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.csprojResolveAssemblyReference.cache
+C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.MenuPrincipal.resources
+C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Properties.Resources.resources
+C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Relatorios.Escolha_Relatorio_Forms.resources
+C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Relatorios.Exibir_Relatorio_Forms.resources
+C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.csproj.GenerateResource.Cache
+C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\bin\Debug\Trabalho Final.exe
+C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\bin\Debug\Trabalho Final.pdb
+C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Usuarios.CadastroUsuario.resources

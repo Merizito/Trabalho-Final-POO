@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using Trabalho_Final.Usuarios;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
@@ -20,11 +21,16 @@ namespace Trabalho_Final.Relatorios
         Contas.Conta contaEscolhida;  //certo
         StreamReader arquivoCombobox;
         string escolha;
-
+        Usuario usuario;
 
         public Escolha_Relatorio_Forms()
         {
             InitializeComponent();
+        }
+        public Escolha_Relatorio_Forms(Usuario usu)
+        {
+            usuario = usu;
+            InitializeComponent(); // CHEGA NO ESCOLHA 
         }
 
         private void Relatorio_Forms_Load(object sender, EventArgs e)
@@ -42,12 +48,12 @@ namespace Trabalho_Final.Relatorios
             arquivoCombobox = Program.abrirArquivo(escolha.ToLower());
             string texto = arquivoCombobox.ReadToEnd();
             string[] vetor = texto.Split('\n', '-');
-            for (i = 0; i < vetor.Length; i++)
+            for (i = 0; i < vetor.Length; i++) // VC ESCOLHE AGUA OU ENERGIA
             {
                 try
                 {
                     Relatorios_comboBox.Items.Add(vetor[i]);
-                    i++;
+                    i++; //ELE PREENCHE O COMBOBOX
                 }
                 catch (StackOverflowException)
                 {
@@ -98,40 +104,40 @@ namespace Trabalho_Final.Relatorios
 
         private void Proximo_botao_Click(object sender, EventArgs e)
         {
+
+            contaEscolhida.setRelatorio(Relatorios_comboBox.Text);
+            Program.contaRelatorio = contaEscolhida;
+            Hide();
+            Exibir_Relatorio_Forms exibirrelatorio = new Exibir_Relatorio_Forms(contaEscolhida, usuario);
+            exibirrelatorio.ShowDialog();
+            /*
             try
             {
-                if (Relatorios_comboBox.Text == "" || Relatorios_comboBox.Text == null)
+                if (Relatorios_comboBox.Text == null)
                     throw new NullReferenceException();
                 else
                 {
                     contaEscolhida.setRelatorio(Relatorios_comboBox.Text);
-                    Program.contaRelatorio = contaEscolhida;//aaaaaaahhh
-                    Exibir_Relatorio_Forms teste = new Exibir_Relatorio_Forms(contaEscolhida);
-                    //eu tinha pensado em algo como, e se usarmos hide? ou entao, dermos o close la no exibir
-                    // o hide pode funcionar, o close no exibir nao vai dar, vai fechar o proprio exibir
-                    //tendi nao
-                    //sobre o close, era tentar com um objeto desse forms, ou referencia dele
-                    //sobre o show nao sei, mas se nao funcionar podemos usar o app.run kkkk
-                    //deixa eu tentar com o close no exibir aqu pera ai, tenta ai kkkk
-                    //ele faz isso no main, ele cria um objeto do forms2 e usa o objeto.showDialog
-                    teste.ShowDialog();   //entendi como close funciona
-                    ///close é hard, só fecha e boa
-                    ///dane-se os outros o 
-                    ///vc consegue ver video?sim
-                    ///o que o cara fez deve funcionar, só que, o forms anterior fica aberto agnt conseguiu fazer isso, e escondemos
-                    ///o forms anterior, talvez seja melhor nao esconder,  alias talvez funciona com hide posso te mandar ai? pode
-                    ///pode ir pulando pq ne kkkkk
-                    ///sabe onde mostar o codigo nao?
-                    ///
+                    Program.contaRelatorio = contaEscolhida;
+                    Hide();
+                    Exibir_Relatorio_Forms exibirrelatorio = new Exibir_Relatorio_Forms(contaEscolhida, usuario);
+                    exibirrelatorio.ShowDialog();  //VC MANDA PRO PROXIMO QUE É EXIBIR pera, vc fez menu principal?
+                    //POXA VIDA
+                    /// É ISSO
+                    /// PQP
+                    /// sera que discord rola pelo cell? usando wifi? sim haha
+                    ///o ping é zoado, vc pode tentar, mas autentica la com seu logince sabe que tem app pra cel ne?
+                    /// do discord
+                    /// sim, eu tbm to com o skype
+                    /// skype, deve zoar mais eu acho to recepcao
+
                     
-                }///        :..........) chorando de felicidade man
-                ///acho que agnt pode usar isso haahha pakas, sim tipo....
-                ///nao vai fechar a anterior ne, mas ele bloqueia mesmo? tipo vc consegue clicar no forms anterior?
-                ///agr ta melhor nossaaaaaa, o outro recuso que ele fez tbm resolve, se liga.... deixa só conferir aqui
+                    
+                }
             }
             catch (NullReferenceException erro) {
                 MessageBox.Show(erro.Message);
-            }
+            }*/
             
 
         }

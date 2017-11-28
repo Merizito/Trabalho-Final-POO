@@ -10,9 +10,8 @@ namespace Trabalho_Final.Contas
    
     public abstract class Conta
     {
-        Usuario usuario;char 
-        private string tipo;
-        private string relatorio;
+        Usuario usuario;
+        private string relatorio, tipo;
         public string getTipo() {
             return this.tipo;
         }

@@ -20,18 +20,38 @@ namespace Trabalho_Final
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Escolha_Relatorio_Forms());
+            Application.Run(new MenuPrincipal());// ELE RODA UM ESCOLHA
             
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        public static StreamReader abrirArquivo(string nome) {
             FileStream arq = new FileStream(nome +".txt", FileMode.Open); 
             StreamReader abrir = new StreamReader(arq);
             return abrir;
         }
-        public static StreamReader criarArquivo(string nome)
+        public static StreamWriter criarArquivo(string nome)
         {
             FileStream arq = new FileStream(nome +".txt", FileMode.Create);
-            StreamReader abrir = new StreamReader(arq);
+            StreamWriter abrir = new StreamWriter(arq);
             return abrir;
         }
         public static StreamWriter escreverArquivo(string nome)
@@ -52,5 +72,6 @@ namespace Trabalho_Final
         {
             arquivo.Close();
         }
+        
     }
 }

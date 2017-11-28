@@ -79,7 +79,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 128);
+            this.label3.Location = new System.Drawing.Point(12, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 13);
             this.label3.TabIndex = 5;
@@ -88,9 +88,9 @@
             // Relatorios_comboBox
             // 
             this.Relatorios_comboBox.FormattingEnabled = true;
-            this.Relatorios_comboBox.Location = new System.Drawing.Point(140, 125);
+            this.Relatorios_comboBox.Location = new System.Drawing.Point(15, 125);
             this.Relatorios_comboBox.Name = "Relatorios_comboBox";
-            this.Relatorios_comboBox.Size = new System.Drawing.Size(123, 21);
+            this.Relatorios_comboBox.Size = new System.Drawing.Size(248, 21);
             this.Relatorios_comboBox.TabIndex = 4;
             this.Relatorios_comboBox.SelectedIndexChanged += new System.EventHandler(this.Relatorios_comboBox_SelectedIndexChanged);
             // 

@@ -42,6 +42,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "RELATORIOS";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -63,9 +64,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(220, 103);
+            this.button4.Location = new System.Drawing.Point(105, 139);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(60, 23);
+            this.button4.Size = new System.Drawing.Size(87, 30);
             this.button4.TabIndex = 3;
             this.button4.Text = "SAIR";
             this.button4.UseVisualStyleBackColor = true;
@@ -74,13 +75,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 138);
+            this.ClientSize = new System.Drawing.Size(318, 193);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "PainelAdm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PainelAdm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PainelAdm_FormClosed);
+            this.Load += new System.EventHandler(this.PainelAdm_Load);
             this.ResumeLayout(false);
 
         }

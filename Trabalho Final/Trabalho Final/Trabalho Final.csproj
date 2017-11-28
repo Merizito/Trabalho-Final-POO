@@ -49,10 +49,10 @@
     <Compile Include="Contas\Conta.cs" />
     <Compile Include="Contas\ContaAgua.cs" />
     <Compile Include="Contas\ContaEnergia.cs" />
-    <Compile Include="MenuPrincipal.cs">
+    <Compile Include="Usuarios\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.Designer.cs">
+    <Compile Include="Usuarios\MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="PainelAdm.cs">
@@ -78,11 +78,8 @@
     <Compile Include="Usuarios\CadastroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarios\CadastroUsuario.Designer.cs">
-      <DependentUpon>CadastroUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Usuarios\Usuario.cs" />
-    <EmbeddedResource Include="MenuPrincipal.resx">
+    <EmbeddedResource Include="Usuarios\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PainelAdm.resx">

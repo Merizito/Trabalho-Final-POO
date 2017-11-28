@@ -118,29 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Sair_botao.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Fechar_botao.Location" type="System.Drawing.Point, System.Drawing">
     <value>98, 218</value>
   </data>
-  <data name="Sair_botao.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Fechar_botao.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Sair_botao.TabIndex" type="System.Int32, mscorlib">
+  <data name="Fechar_botao.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="Sair_botao.Text" xml:space="preserve">
-    <value>SAIR</value>
+  <data name="Fechar_botao.Text" xml:space="preserve">
+    <value>Fechar</value>
   </data>
-  <data name="&gt;&gt;Sair_botao.Name" xml:space="preserve">
-    <value>Sair_botao</value>
+  <data name="&gt;&gt;Fechar_botao.Name" xml:space="preserve">
+    <value>Fechar_botao</value>
   </data>
-  <data name="&gt;&gt;Sair_botao.Type" xml:space="preserve">
+  <data name="&gt;&gt;Fechar_botao.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Sair_botao.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Fechar_botao.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Sair_botao.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Fechar_botao.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="textBox_NomeUsu.Location" type="System.Drawing.Point, System.Drawing">
@@ -353,6 +353,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>276, 261</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Exibir_Relatorio_Forms</value>

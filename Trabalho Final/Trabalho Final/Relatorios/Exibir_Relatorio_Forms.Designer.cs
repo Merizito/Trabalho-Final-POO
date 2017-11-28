@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Exibir_Relatorio_Forms));
-            this.Sair_botao = new System.Windows.Forms.Button();
+            this.Fechar_botao = new System.Windows.Forms.Button();
             this.textBox_NomeUsu = new System.Windows.Forms.TextBox();
             this.textBox_CPF = new System.Windows.Forms.TextBox();
             this.textBox_Consumo = new System.Windows.Forms.TextBox();
@@ -40,12 +40,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Sair_botao
+            // Fechar_botao
             // 
-            resources.ApplyResources(this.Sair_botao, "Sair_botao");
-            this.Sair_botao.Name = "Sair_botao";
-            this.Sair_botao.UseVisualStyleBackColor = true;
-            this.Sair_botao.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(this.Fechar_botao, "Fechar_botao");
+            this.Fechar_botao.Name = "Fechar_botao";
+            this.Fechar_botao.UseVisualStyleBackColor = true;
+            this.Fechar_botao.Click += new System.EventHandler(this.Fechar_botao_Click);
             // 
             // textBox_NomeUsu
             // 
@@ -99,7 +99,7 @@
             this.Controls.Add(this.textBox_Consumo);
             this.Controls.Add(this.textBox_CPF);
             this.Controls.Add(this.textBox_NomeUsu);
-            this.Controls.Add(this.Sair_botao);
+            this.Controls.Add(this.Fechar_botao);
             this.Name = "Exibir_Relatorio_Forms";
             this.Load += new System.EventHandler(this.Exibir_Relatorio_Forms_Load);
             this.ResumeLayout(false);
@@ -109,7 +109,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Sair_botao;
+        private System.Windows.Forms.Button Fechar_botao;
         private System.Windows.Forms.TextBox textBox_NomeUsu;
         private System.Windows.Forms.TextBox textBox_CPF;
         private System.Windows.Forms.TextBox textBox_Consumo;

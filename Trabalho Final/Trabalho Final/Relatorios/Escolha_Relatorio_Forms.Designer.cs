@@ -122,6 +122,7 @@
             this.Voltar_botao.TabIndex = 8;
             this.Voltar_botao.Text = "VOLTAR";
             this.Voltar_botao.UseVisualStyleBackColor = true;
+            this.Voltar_botao.Click += new System.EventHandler(this.Voltar_botao_Click);
             // 
             // Escolha_Relatorio_Forms
             // 
@@ -138,6 +139,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Escolha_Relatorio_Forms";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Relatorio";
             this.Load += new System.EventHandler(this.Relatorio_Forms_Load);
             this.ResumeLayout(false);

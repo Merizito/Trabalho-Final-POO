@@ -22,7 +22,7 @@ namespace Trabalho_Final.Contas
         {
             return this.relatorio;
         }
-        public void setRelatorio(string relatorio)//bora tentar
+        public void setRelatorio(string relatorio)
         {
             this.relatorio = relatorio;
         }

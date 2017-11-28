@@ -22,3 +22,17 @@ C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\o
 C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\bin\Debug\Trabalho Final.exe
 C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\bin\Debug\Trabalho Final.pdb
 C:\Users\1077333\Source\Repos\Trabalho-Final-POO\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Usuarios.CadastroUsuario.resources
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\bin\Debug\Trabalho Final.exe.config
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\bin\Debug\Trabalho Final.exe
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\bin\Debug\Trabalho Final.pdb
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.csprojResolveAssemblyReference.cache
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.MenuPrincipal.resources
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.PainelAdm.resources
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Properties.Resources.resources
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Relatorios.Escolha_Relatorio_Forms.resources
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Relatorios.Exibir_Relatorio_Forms.resources
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Usuarios.CadastroUsuario.resources
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.csproj.GenerateResource.Cache
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.csproj.CoreCompileInputs.cache
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.exe
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.pdb

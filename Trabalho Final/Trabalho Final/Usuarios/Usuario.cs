@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;    
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -66,6 +67,42 @@ namespace Trabalho_Final.Usuarios
                 resto = 11 - resto;
             digito = digito + resto.ToString();
             return cpf.EndsWith(digito);
+        }
+        static public bool ProcuraCPF(string cpf) {
+            StreamReader ler = Program.abrirArquivo("USUARIOS");
+            string arquivo = ler.ReadToEnd();
+            string CPF = cpf.Replace("/", "").Replace(".","").Replace("-","").Replace(" ","");
+                if (arquivo.Contains(CPF))
+                {
+                    Program.fecharArquivo(ler);
+                    return true;
+                }
+            Program.fecharArquivo(ler);
+            return false;
+        }
+
+
+        static public bool ProcuraCadastro(string cpf, string nome)
+        {
+            StreamReader ler = Program.abrirArquivo("USUARIOS");
+            string CPF = cpf.Replace("/", "").Replace(".", "").Replace("-", "").Replace(" ", "");
+            string linha;
+            nome = nome.ToUpper();
+            do
+            {
+                linha = ler.ReadLine();
+                if (linha != null)
+                {
+                    linha = linha.ToUpper();
+                    if (linha.Contains(CPF) && linha.Contains(nome))
+                    {
+                        Program.fecharArquivo(ler);
+                        return true;
+                    }
+                }
+            } while (linha != null);
+            Program.fecharArquivo(ler);
+            return false;
         }
     }
 }

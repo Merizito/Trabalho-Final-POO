@@ -18,7 +18,7 @@ namespace Trabalho_Final.Relatorios
     
     public partial class Escolha_Relatorio_Forms : Form
     {
-        Contas.Conta contaEscolhida;  //certo
+        Contas.Conta contaEscolhida;  
         StreamReader arquivoCombobox;
         string escolha;
         Usuario usuario;
@@ -40,11 +40,15 @@ namespace Trabalho_Final.Relatorios
 
         private void AGUA_Click(object sender, EventArgs e)
         {
+
+
+
+
             int i = 0;
             escolha = "agua";
             ENERGIA_BOTAO.Enabled = false;
             AGUA.Enabled = false;
-            contaEscolhida = new ContaAgua();/// que botao é esse? entao, o nome nao trocou aqui mas é o AGUA
+            contaEscolhida = new ContaAgua();
             arquivoCombobox = Program.abrirArquivo(escolha.ToLower());
             string texto = arquivoCombobox.ReadToEnd();
             string[] vetor = texto.Split('\n', '-');
@@ -108,8 +112,12 @@ namespace Trabalho_Final.Relatorios
             contaEscolhida.setRelatorio(Relatorios_comboBox.Text);
             Program.contaRelatorio = contaEscolhida;
             Hide();
+            Relatorios_comboBox.Items.Clear();
+            ENERGIA_BOTAO.Enabled = true;
+            AGUA.Enabled = true;
             Exibir_Relatorio_Forms exibirrelatorio = new Exibir_Relatorio_Forms(contaEscolhida, usuario);
             exibirrelatorio.ShowDialog();
+            Show();
             /*
             try
             {
@@ -121,15 +129,8 @@ namespace Trabalho_Final.Relatorios
                     Program.contaRelatorio = contaEscolhida;
                     Hide();
                     Exibir_Relatorio_Forms exibirrelatorio = new Exibir_Relatorio_Forms(contaEscolhida, usuario);
-                    exibirrelatorio.ShowDialog();  //VC MANDA PRO PROXIMO QUE É EXIBIR pera, vc fez menu principal?
-                    //POXA VIDA
-                    /// É ISSO
-                    /// PQP
-                    /// sera que discord rola pelo cell? usando wifi? sim haha
-                    ///o ping é zoado, vc pode tentar, mas autentica la com seu logince sabe que tem app pra cel ne?
-                    /// do discord
-                    /// sim, eu tbm to com o skype
-                    /// skype, deve zoar mais eu acho to recepcao
+                    exibirrelatorio.ShowDialog();  
+                    
 
                     
                     
@@ -145,6 +146,11 @@ namespace Trabalho_Final.Relatorios
         private void Sair_botao_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void Voltar_botao_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -118,34 +118,11 @@ namespace Trabalho_Final.Relatorios
             Exibir_Relatorio_Forms exibirrelatorio = new Exibir_Relatorio_Forms(contaEscolhida, usuario);
             exibirrelatorio.ShowDialog();
             Show();
-            /*
-            try
-            {
-                if (Relatorios_comboBox.Text == null)
-                    throw new NullReferenceException();
-                else
-                {
-                    contaEscolhida.setRelatorio(Relatorios_comboBox.Text);
-                    Program.contaRelatorio = contaEscolhida;
-                    Hide();
-                    Exibir_Relatorio_Forms exibirrelatorio = new Exibir_Relatorio_Forms(contaEscolhida, usuario);
-                    exibirrelatorio.ShowDialog();  
-                    
-
-                    
-                    
-                }
-            }
-            catch (NullReferenceException erro) {
-                MessageBox.Show(erro.Message);
-            }*/
-            
-
         }
 
         private void Sair_botao_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            Application.Exit();
         }
 
         private void Voltar_botao_Click(object sender, EventArgs e)

@@ -33,7 +33,7 @@ namespace Trabalho_Final
             this.textBox_CPF = new System.Windows.Forms.TextBox();
             this.button_Proximo = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Sair_botao = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -47,7 +47,7 @@ namespace Trabalho_Final
             // 
             // textBox_CPF
             // 
-            this.textBox_CPF.Location = new System.Drawing.Point(98, 64);
+            this.textBox_CPF.Location = new System.Drawing.Point(98, 44);
             this.textBox_CPF.MaxLength = 14;
             this.textBox_CPF.Name = "textBox_CPF";
             this.textBox_CPF.Size = new System.Drawing.Size(100, 20);
@@ -56,7 +56,7 @@ namespace Trabalho_Final
             // 
             // button_Proximo
             // 
-            this.button_Proximo.Location = new System.Drawing.Point(216, 147);
+            this.button_Proximo.Location = new System.Drawing.Point(98, 70);
             this.button_Proximo.Name = "button_Proximo";
             this.button_Proximo.Size = new System.Drawing.Size(84, 23);
             this.button_Proximo.TabIndex = 2;
@@ -66,7 +66,7 @@ namespace Trabalho_Final
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(114, 147);
+            this.button1.Location = new System.Drawing.Point(181, 147);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 23);
             this.button1.TabIndex = 3;
@@ -74,15 +74,15 @@ namespace Trabalho_Final
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // Sair_botao
             // 
-            this.button2.Location = new System.Drawing.Point(12, 147);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "SAIR";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Sair_botao.Location = new System.Drawing.Point(51, 147);
+            this.Sair_botao.Name = "Sair_botao";
+            this.Sair_botao.Size = new System.Drawing.Size(84, 23);
+            this.Sair_botao.TabIndex = 4;
+            this.Sair_botao.Text = "SAIR";
+            this.Sair_botao.UseVisualStyleBackColor = true;
+            this.Sair_botao.Click += new System.EventHandler(this.Sair_botao_Click);
             // 
             // label1
             // 
@@ -98,7 +98,7 @@ namespace Trabalho_Final
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(48, 67);
+            this.label2.Location = new System.Drawing.Point(48, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 17);
             this.label2.TabIndex = 6;
@@ -112,7 +112,7 @@ namespace Trabalho_Final
             this.ClientSize = new System.Drawing.Size(321, 182);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Sair_botao);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button_Proximo);
             this.Controls.Add(this.textBox_CPF);
@@ -133,7 +133,7 @@ namespace Trabalho_Final
         private TextBox textBox_CPF;
         private Button button_Proximo;
         private Button button1;
-        private Button button2;
+        private Button Sair_botao;
         private Label label1;
         private Label label2;
     }

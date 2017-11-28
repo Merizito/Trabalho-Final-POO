@@ -15,11 +15,16 @@ namespace Trabalho_Final.Usuarios
         private Label label1;
         private Label label2;
         private Button button_Confirmar;
+        private ComboBox comboBox_Tipo;
+        private Label label3;
         private Button button_Voltar;
 
         public CadastroUsuario() {
 
            InitializeComponent();
+
+            comboBox_Tipo.Text = "Residencial";
+            comboBox_Tipo.Text = "Comercial";
 
         }
 
@@ -31,6 +36,8 @@ namespace Trabalho_Final.Usuarios
             this.label2 = new System.Windows.Forms.Label();
             this.button_Confirmar = new System.Windows.Forms.Button();
             this.button_Voltar = new System.Windows.Forms.Button();
+            this.comboBox_Tipo = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox_Nome
@@ -85,9 +92,32 @@ namespace Trabalho_Final.Usuarios
             this.button_Voltar.UseVisualStyleBackColor = true;
             this.button_Voltar.Click += new System.EventHandler(this.button_Voltar_Click);
             // 
+            // comboBox_Tipo
+            // 
+            this.comboBox_Tipo.FormattingEnabled = true;
+            this.comboBox_Tipo.Items.AddRange(new object[] {
+            "Comercial",
+            "Residencial"});
+            this.comboBox_Tipo.Location = new System.Drawing.Point(87, 93);
+            this.comboBox_Tipo.Name = "comboBox_Tipo";
+            this.comboBox_Tipo.Size = new System.Drawing.Size(100, 21);
+            this.comboBox_Tipo.TabIndex = 6;
+            this.comboBox_Tipo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_Tipo_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(31, 96);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(28, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Tipo";
+            // 
             // CadastroUsuario
             // 
             this.ClientSize = new System.Drawing.Size(284, 201);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox_Tipo);
             this.Controls.Add(this.button_Voltar);
             this.Controls.Add(this.button_Confirmar);
             this.Controls.Add(this.label2);
@@ -96,6 +126,7 @@ namespace Trabalho_Final.Usuarios
             this.Controls.Add(this.textBox_Nome);
             this.Name = "CadastroUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastro Usuário";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CadastroUsuario_FormClosed);
             this.Load += new System.EventHandler(this.CadastroUsuario_Load);
             this.ResumeLayout(false);
@@ -115,7 +146,7 @@ namespace Trabalho_Final.Usuarios
 
         private void button_Confirmar_Click(object sender, EventArgs e)
         {
-
+            string nome;
 
             if (Usuario.Valida(textBox_CPF.Text) == false)
             {
@@ -124,25 +155,46 @@ namespace Trabalho_Final.Usuarios
             }
             else if (textBox_Nome.Text == null)
                 MessageBox.Show("DIGITE UM NOME");
+            else if (comboBox_Tipo.Text == null || comboBox_Tipo.Text == "")
+                MessageBox.Show("ESCOLHA UM TIPO!");
             else
             {
                 if (Usuario.ProcuraCPF(textBox_CPF.Text) == false)
                 {
+                    string diretorio = Directory.GetCurrentDirectory();
+                    if (!Directory.Exists(diretorio + @"\" + textBox_CPF.Text))
+                    {
 
-                    StreamWriter CADNOVO = Program.escreverArquivo("USUARIOS");
-                    CADNOVO.WriteLine(textBox_Nome.Text + "\t" + textBox_CPF.Text.Replace("/", "").Replace(".", "").Replace("-", "").Replace(" ", "") + "\t");
+                        Directory.CreateDirectory(diretorio + @"\" + textBox_CPF.Text);
+
+                    }
+                    nome = diretorio + @"\" + textBox_CPF.Text + @"\" + textBox_Nome.Text;
+
+                    StreamWriter CADNOVO = Program.criarArquivo(nome);
                     Program.fecharArquivo(CADNOVO);
+                    StreamWriter cadastronovo = Program.escreverArquivo(nome.ToUpper());
+                    StreamWriter arq_usuario = Program.escreverArquivo("USUARIOS");
+                    arq_usuario.WriteLine(textBox_Nome.Text.ToUpper() + "\t" + textBox_CPF.Text.Replace("/", "").Replace(".", "").Replace("-", "").Replace(" ", "") + "\t");
+                    Program.fecharArquivo(arq_usuario);
+                    cadastronovo.WriteLine(textBox_Nome.Text + "\t" + textBox_CPF.Text.Replace("/", "").Replace(".", "").Replace("-", "").Replace(" ", "") + "\t" + comboBox_Tipo.Text.ToUpper() + "\t");
+                    Program.fecharArquivo(cadastronovo);
                     MessageBox.Show("CADASTRO REALIZADO COM SUCESSO!");
                     Close();
                 }
                 else
                     MessageBox.Show("USUARIO JA CADASTRADO!");
+
             }
+
         }
 
         private void button_Voltar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void comboBox1_Tipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 }

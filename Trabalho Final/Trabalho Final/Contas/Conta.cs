@@ -10,8 +10,7 @@ namespace Trabalho_Final.Contas
    
     public abstract class Conta
     {
-        Usuario usuario;
-        private string relatorio, tipo;
+        private string relatorio, tipo, consumo, valor, consumidor;
         public string getTipo() {
             return this.tipo;
         }
@@ -25,6 +24,26 @@ namespace Trabalho_Final.Contas
         public void setRelatorio(string relatorio)
         {
             this.relatorio = relatorio;
+        }
+        public string getValor() {
+            return this.valor;
+            //calcular valor
+        }
+        public string getConsumidor() {
+            return this.consumidor;
+        }
+        public void setConsumidor(string consumidor)
+        {
+            this.consumidor = consumidor;
+        }
+       
+        public string getConsumo()
+        {
+            return this.consumo;
+        }
+        public void setConsumo(double valor)
+        {
+            consumo = Convert.ToString(valor);
         }
     }
 }

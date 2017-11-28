@@ -33,16 +33,6 @@ namespace Trabalho_Final
 
 
 
-
-
-
-
-
-
-
-
-
-
        public static StreamReader abrirArquivo(string nome) {
             FileStream arq = new FileStream(nome +".txt", FileMode.Open); 
             StreamReader abrir = new StreamReader(arq);
@@ -54,6 +44,7 @@ namespace Trabalho_Final
             StreamWriter abrir = new StreamWriter(arq);
             return abrir;
         }
+
         public static StreamWriter escreverArquivo(string nome)
         {
             FileStream arq = new FileStream(nome +".txt", FileMode.Append);

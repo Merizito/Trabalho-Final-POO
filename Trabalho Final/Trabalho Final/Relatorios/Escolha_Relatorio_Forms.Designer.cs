@@ -96,7 +96,7 @@
             // 
             // Sair_botao
             // 
-            this.Sair_botao.Location = new System.Drawing.Point(12, 208);
+            this.Sair_botao.Location = new System.Drawing.Point(24, 208);
             this.Sair_botao.Name = "Sair_botao";
             this.Sair_botao.Size = new System.Drawing.Size(75, 23);
             this.Sair_botao.TabIndex = 6;
@@ -106,7 +106,7 @@
             // 
             // Proximo_botao
             // 
-            this.Proximo_botao.Location = new System.Drawing.Point(188, 208);
+            this.Proximo_botao.Location = new System.Drawing.Point(186, 208);
             this.Proximo_botao.Name = "Proximo_botao";
             this.Proximo_botao.Size = new System.Drawing.Size(75, 23);
             this.Proximo_botao.TabIndex = 7;
@@ -116,7 +116,7 @@
             // 
             // Voltar_botao
             // 
-            this.Voltar_botao.Location = new System.Drawing.Point(107, 208);
+            this.Voltar_botao.Location = new System.Drawing.Point(105, 208);
             this.Voltar_botao.Name = "Voltar_botao";
             this.Voltar_botao.Size = new System.Drawing.Size(75, 23);
             this.Voltar_botao.TabIndex = 8;

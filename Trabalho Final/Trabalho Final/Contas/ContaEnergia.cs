@@ -11,6 +11,9 @@ namespace Trabalho_Final.Contas
         public ContaEnergia() {
             setTipo("energia"); 
         }
-
+        public  string CalculaValor()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

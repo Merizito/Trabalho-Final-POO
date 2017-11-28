@@ -10,8 +10,7 @@ namespace Trabalho_Final.Usuarios
 {
     public class Usuario
     {
-        string nome;
-        string CPF;
+        private string nome, CPF;
         public string getNome() {
             return this.nome;
         }
@@ -69,15 +68,24 @@ namespace Trabalho_Final.Usuarios
             return cpf.EndsWith(digito);
         }
         static public bool ProcuraCPF(string cpf) {
-            StreamReader ler = Program.abrirArquivo("USUARIOS");
-            string arquivo = ler.ReadToEnd();
-            string CPF = cpf.Replace("/", "").Replace(".","").Replace("-","").Replace(" ","");
+            if (File.Exists("USUARIOS.txt"))
+            {
+                StreamReader ler = Program.abrirArquivo("USUARIOS");
+                string arquivo = ler.ReadToEnd();
+                string CPF = cpf.Replace("/", "").Replace(".", "").Replace("-", "").Replace(" ", "");
                 if (arquivo.Contains(CPF))
                 {
                     Program.fecharArquivo(ler);
                     return true;
                 }
-            Program.fecharArquivo(ler);
+                Program.fecharArquivo(ler);
+            }
+            else
+            {
+                StreamWriter arq_usuario = Program.criarArquivo("USUARIOS");
+                Program.fecharArquivo(arq_usuario);
+                MessageBox.Show("ARQUIVO CRIADO");
+            }
             return false;
         }
 

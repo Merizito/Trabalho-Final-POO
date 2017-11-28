@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contas\Cadastrar_Conta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contas\Cadastrar_Conta.Designer.cs">
+      <DependentUpon>Cadastrar_Conta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Contas\Conta.cs" />
     <Compile Include="Contas\ContaAgua.cs" />
     <Compile Include="Contas\ContaEnergia.cs" />
@@ -79,6 +85,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Usuarios\Usuario.cs" />
+    <EmbeddedResource Include="Contas\Cadastrar_Conta.resx">
+      <DependentUpon>Cadastrar_Conta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usuarios\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>

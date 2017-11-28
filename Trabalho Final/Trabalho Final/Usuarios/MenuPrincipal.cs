@@ -33,13 +33,13 @@ namespace Trabalho_Final
             }
             else
             {
-                if (Usuario.ProcuraCadastro(textBox_CPF.Text, textBox_Nome.Text) == true)
+                if (Usuario.ProcuraCadastro(textBox_CPF.Text, textBox_Nome.Text.ToUpper()) == true)
                 {
                     Usuario USUARIO = new Usuario();
                     USUARIO.setNome(textBox_Nome.Text);
                     USUARIO.setCPF(textBox_CPF.Text);
-                    Hide();
                     textBox_CPF.Text = "";
+                    Hide();
                     PainelAdm escolha = new PainelAdm(USUARIO);
                     escolha.ShowDialog();
                     Show();
@@ -73,9 +73,9 @@ namespace Trabalho_Final
             Environment.Exit(0);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Sair_botao_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            Application.Exit();
         }
     }
 

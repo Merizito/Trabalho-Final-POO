@@ -36,3 +36,4 @@ C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho 
 C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.csproj.CoreCompileInputs.cache
 C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.exe
 C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho Final.pdb
+C:\Users\Merizito\Documents\Projetos Visual Studio\Laboratório de POO\Trabalho Final\Trabalho Final\Trabalho Final\obj\Debug\Trabalho_Final.Contas.Cadastrar_Conta.resources

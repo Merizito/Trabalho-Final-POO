@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBox_Data = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Fechar_botao
@@ -87,10 +88,16 @@
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
+            // textBox_Data
+            // 
+            resources.ApplyResources(this.textBox_Data, "textBox_Data");
+            this.textBox_Data.Name = "textBox_Data";
+            // 
             // Exibir_Relatorio_Forms
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBox_Data);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -118,5 +125,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox_Data;
     }
 }

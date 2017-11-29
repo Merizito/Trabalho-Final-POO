@@ -88,11 +88,20 @@
             // Relatorios_comboBox
             // 
             this.Relatorios_comboBox.FormattingEnabled = true;
-            this.Relatorios_comboBox.Location = new System.Drawing.Point(15, 125);
+            this.Relatorios_comboBox.Items.AddRange(new object[] {
+            "1 - Qual foi meu consumo de energia/água no último mês?",
+            "2 - Qual é o valor total da minha conta?",
+            "3 - Qual é o valor da minha conta sem impostos?",
+            "4 - Quanto variou minha conta, em reais e em consumo, entre dois meses escolhidos" +
+                "?",
+            "5 - Qual é o valor médio da minha conta de energia/água?",
+            "6 - Em que mês houve a conta de maior valor, em reais e em consumo?"});
+            this.Relatorios_comboBox.Location = new System.Drawing.Point(16, 125);
             this.Relatorios_comboBox.Name = "Relatorios_comboBox";
             this.Relatorios_comboBox.Size = new System.Drawing.Size(248, 21);
             this.Relatorios_comboBox.TabIndex = 4;
             this.Relatorios_comboBox.SelectedIndexChanged += new System.EventHandler(this.Relatorios_comboBox_SelectedIndexChanged);
+            this.Relatorios_comboBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Relatorios_comboBox_KeyPress);
             // 
             // Sair_botao
             // 
@@ -154,9 +163,9 @@
         private System.Windows.Forms.Button ENERGIA_BOTAO;
         private System.Windows.Forms.Button AGUA;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox Relatorios_comboBox;
         private System.Windows.Forms.Button Sair_botao;
         private System.Windows.Forms.Button Proximo_botao;
         private System.Windows.Forms.Button Voltar_botao;
+        public System.Windows.Forms.ComboBox Relatorios_comboBox;
     }
 }

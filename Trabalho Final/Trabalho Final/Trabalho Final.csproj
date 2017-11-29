@@ -55,6 +55,12 @@
     <Compile Include="Contas\Conta.cs" />
     <Compile Include="Contas\ContaAgua.cs" />
     <Compile Include="Contas\ContaEnergia.cs" />
+    <Compile Include="Relatorios\RelatorioDoisMeses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\RelatorioDoisMeses.Designer.cs">
+      <DependentUpon>RelatorioDoisMeses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usuarios\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <Compile Include="Usuarios\Usuario.cs" />
     <EmbeddedResource Include="Contas\Cadastrar_Conta.resx">
       <DependentUpon>Cadastrar_Conta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\RelatorioDoisMeses.resx">
+      <DependentUpon>RelatorioDoisMeses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>

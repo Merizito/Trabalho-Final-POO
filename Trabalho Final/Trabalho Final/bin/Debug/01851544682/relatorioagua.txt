@@ -1,0 +1,2 @@
+27/11/2017	Tipo: agua	Consumo: 200	Valor:1669,77&
+28/11/2017	Tipo: agua	Consumo: 300	Valor:2502,67&

@@ -34,7 +34,7 @@ namespace Trabalho_Final
 
         private void PainelAdm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Environment.Exit(0);
+            Application.Exit();
         }
 
         private void Relatorios_botao_Click(object sender, EventArgs e)

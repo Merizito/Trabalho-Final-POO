@@ -23,8 +23,8 @@ namespace Trabalho_Final.Usuarios
 
            InitializeComponent();
 
-            comboBox_Tipo.Text = "Residencial";
-            comboBox_Tipo.Text = "Comercial";
+            comboBox_Tipo.Text = "RESIDENCIAL";
+            comboBox_Tipo.Text = "COMERCIAL";
 
         }
 

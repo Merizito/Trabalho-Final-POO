@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace Trabalho_Final.Contas
 {
+    delegate string delegado();
     public partial class Cadastrar_Conta : Form
     {
         Conta novaConta;
@@ -28,10 +29,14 @@ namespace Trabalho_Final.Contas
             {
                 this.Text = "Conta Agua";
                 novaConta = new ContaAgua();
-         }
+                novaConta.setTipo("agua");
+
+
+            }
             else if (tipo.ToUpper() == "energia".ToUpper()) {
                 novaConta = new ContaEnergia();
                 this.Text = "Conta Energia";
+                novaConta.setTipo("energia");
 
             }
 
@@ -51,26 +56,31 @@ namespace Trabalho_Final.Contas
 
         private void Confirmar_botao_Click(object sender, EventArgs e)
         {
-            string Caminho = Directory.GetCurrentDirectory();
+                string Caminho = Directory.GetCurrentDirectory();
 
-            if (File.Exists(Caminho + @"\" + usuario.getCPF() + @"\" + "relatorio" + novaConta.getTipo()+".txt"))
-            {
-                StreamWriter escreve = Program.escreverArquivo(Caminho + @"\" + usuario.getCPF() + @"\" + "relatorio" + novaConta.getTipo());
-                escreve.WriteLine(textBox_Data.Text + "\t" + textBox_Consumo.Text + "\t" + novaConta.getValor());
-                Program.fecharArquivo(escreve);
-                MessageBox.Show("Conta criada com sucesso!", "Confirmação!");
-                Close();
-            }
-            else {
-                Directory.CreateDirectory(Caminho + @"\" + usuario.getCPF());
-                StreamWriter criar = Program.criarArquivo(Caminho + @"\" + usuario.getCPF() + @"\" + "relatorio" + novaConta.getTipo());
-                Program.fecharArquivo(criar);
-                StreamWriter escreve = Program.escreverArquivo(Caminho + @"\" + usuario.getCPF() + @"\" + "relatorio" + novaConta.getTipo());
-                escreve.WriteLine(textBox_Data.Text + "\t" + textBox_Consumo.Text + "\t" + novaConta.getValor());
-                Program.fecharArquivo(escreve);
-                MessageBox.Show("Conta criada com sucesso!", "Confirmação!");
-                Close();
-            }
+                if (File.Exists(Caminho + @"\" + usuario.getCPF() + @"\" + "relatorio" + novaConta.getTipo() + ".txt"))
+                {
+                    novaConta.setConsumo(Convert.ToDouble(textBox_Consumo.Text));
+                    StreamWriter escreve = Program.escreverArquivo(Caminho + @"\" + usuario.getCPF() + @"\" + "relatorio" + novaConta.getTipo());
+                    escreve.WriteLine(textBox_Data.Text + "\tTipo: " + novaConta.getTipo() + "\t" + "Consumo: " + textBox_Consumo.Text + "\t" + "Valor:" + novaConta.CalcularValor(usuario.getImovel())+"&");
+                    Program.fecharArquivo(escreve);
+                    MessageBox.Show("Conta criada com sucesso!", "Confirmação!");
+                    Close();
+                }
+                else
+                {
+
+                    Directory.CreateDirectory(Caminho + @"\" + usuario.getCPF());
+                    StreamWriter criar = Program.criarArquivo(Caminho + @"\" + usuario.getCPF() + @"\" + "relatorio" + novaConta.getTipo());
+                    Program.fecharArquivo(criar);
+                    novaConta.setConsumo(Convert.ToDouble(textBox_Consumo.Text));
+                    StreamWriter escreve = Program.escreverArquivo(Caminho + @"\" + usuario.getCPF() + @"\" + "relatorio" + novaConta.getTipo());
+                    escreve.WriteLine(textBox_Data.Text + "\tTipo: " + novaConta.getTipo() + "\t" + "Consumo: " + textBox_Consumo.Text + "\t" + "Valor:" + novaConta.CalcularValor(usuario.getImovel())+"&");
+                    Program.fecharArquivo(escreve);
+                    MessageBox.Show("Conta criada com sucesso!", "Confirmação!");
+                    Close();
+                }
+            
         }
 
         

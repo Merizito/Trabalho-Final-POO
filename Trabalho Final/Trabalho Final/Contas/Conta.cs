@@ -14,16 +14,16 @@ namespace Trabalho_Final.Contas
         public string getTipo() {
             return this.tipo;
         }
-        public void setTipo(string tipo) {
-            this.tipo = tipo;
+        public void setTipo(string _tipo) {
+            this.tipo = _tipo;
         }
         public string getRelatorio()
         {
             return this.relatorio;
         }
-        public void setRelatorio(string relatorio)
+        public void setRelatorio(string _relatorio)
         {
-            this.relatorio = relatorio;
+            this.relatorio = _relatorio;
         }
         public string getValor() {
             return this.valor;
@@ -32,6 +32,10 @@ namespace Trabalho_Final.Contas
         public string getConsumidor() {
             return this.consumidor;
         }
+        public void setValor(double _valor) {
+            this.valor = Convert.ToString(_valor);
+        }
+        public virtual string CalcularValor(string usuario) { return usuario; }
         public void setConsumidor(string consumidor)
         {
             this.consumidor = consumidor;

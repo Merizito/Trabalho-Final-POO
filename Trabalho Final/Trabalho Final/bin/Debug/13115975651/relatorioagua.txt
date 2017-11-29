@@ -1,0 +1,2 @@
+27/11/2017	Tipo: agua	Consumo: 150	Valor:1253,32&
+28/11/2017	Tipo: agua	Consumo: 110	Valor:920,16&

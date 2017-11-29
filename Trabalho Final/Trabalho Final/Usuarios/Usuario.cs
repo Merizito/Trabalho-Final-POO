@@ -10,7 +10,7 @@ namespace Trabalho_Final.Usuarios
 {
     public class Usuario
     {
-        private string nome, CPF;
+        private string nome, CPF, tipo,imovel;
         public string getNome() {
             return this.nome;
         }
@@ -24,6 +24,18 @@ namespace Trabalho_Final.Usuarios
         public void setCPF(string CPF)
         {
             this.CPF = CPF;
+        }
+        public void setImovel(string tipo) {
+            this.imovel = tipo;
+        }
+        public void setTipo(string tipo) {
+            this.tipo = tipo;
+        }
+        public string getTipo() {
+            return this.tipo;
+        }
+        public string getImovel() {
+            return imovel;
         }
         static public bool Valida(string cpf)
         {
@@ -114,4 +126,23 @@ namespace Trabalho_Final.Usuarios
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

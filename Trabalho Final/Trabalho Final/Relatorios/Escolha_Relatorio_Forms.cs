@@ -40,16 +40,13 @@ namespace Trabalho_Final.Relatorios
 
         private void AGUA_Click(object sender, EventArgs e)
         {
-
-
-
-
+            
             int i = 0;
             escolha = "agua";
             ENERGIA_BOTAO.Enabled = false;
             AGUA.Enabled = false;
             contaEscolhida = new ContaAgua();
-            arquivoCombobox = Program.abrirArquivo(escolha.ToLower());
+      /*      arquivoCombobox = Program.abrirArquivo(escolha.ToLower());
             string texto = arquivoCombobox.ReadToEnd();
             string[] vetor = texto.Split('\n', '-');
             for (i = 0; i < vetor.Length; i++) // VC ESCOLHE AGUA OU ENERGIA
@@ -63,8 +60,8 @@ namespace Trabalho_Final.Relatorios
                 {
                     i = vetor.Length;
                 }
-            }
-            Program.fecharArquivo(arquivoCombobox);
+            }*/
+           // Program.fecharArquivo(arquivoCombobox);
 
         }
 
@@ -77,7 +74,7 @@ namespace Trabalho_Final.Relatorios
             AGUA.Enabled = false;
 
             contaEscolhida = new ContaEnergia();
-            arquivoCombobox = Program.abrirArquivo(escolha.ToLower());
+          /*  arquivoCombobox = Program.abrirArquivo(escolha.ToLower());
 
             string texto = arquivoCombobox.ReadToEnd();
             string[] vetor = texto.Split('\n', '-');
@@ -97,13 +94,13 @@ namespace Trabalho_Final.Relatorios
 
 
             Program.fecharArquivo(arquivoCombobox);
-
+            */
 
         }
 
         private void Relatorios_comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Proximo_botao_Click(object sender, EventArgs e)
@@ -128,6 +125,11 @@ namespace Trabalho_Final.Relatorios
         private void Voltar_botao_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Relatorios_comboBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }

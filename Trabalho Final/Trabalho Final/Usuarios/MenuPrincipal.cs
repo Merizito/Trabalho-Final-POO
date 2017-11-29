@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,9 +36,29 @@ namespace Trabalho_Final
             {
                 if (Usuario.ProcuraCadastro(textBox_CPF.Text, textBox_Nome.Text.ToUpper()) == true)
                 {
+                    string diretorio = Directory.GetCurrentDirectory();
                     Usuario USUARIO = new Usuario();
                     USUARIO.setNome(textBox_Nome.Text);
                     USUARIO.setCPF(textBox_CPF.Text);
+                    StreamReader LER = Program.abrirArquivo(diretorio+@"\"+USUARIO.getCPF()+@"\"+USUARIO.getNome());
+                    string linha;
+                    do {
+                        linha = LER.ReadLine();
+                        if (linha != null)
+                            if (linha.Contains(USUARIO.getCPF()))
+                            {
+                                if (linha.Contains("COMERCIAL"))
+                                {
+                                    USUARIO.setImovel("COMERCIAL");
+                                }
+                                else
+                                {
+                                    USUARIO.setImovel("RESIDENCIAL");
+                                }
+                            }
+                        
+                    } while (linha!=null);
+
                     textBox_CPF.Text = "";
                     Hide();
                     PainelAdm escolha = new PainelAdm(USUARIO);
@@ -70,7 +91,7 @@ namespace Trabalho_Final
 
         private void MenuPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Environment.Exit(0);
+            Application.Exit();
         }
 
         private void Sair_botao_Click(object sender, EventArgs e)
